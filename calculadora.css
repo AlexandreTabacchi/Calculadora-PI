@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    background-color: #703618;
+    padding: 15px 35px;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    position: relative; /* faz com que ele seja a referencia para os elementos que estao dentro dele */
+}
+
+.Logo img{
+    display: flex;
+    width: 200px;
+    margin-right: 100px;
+    margin-top: -20px;
+}
+
+.logo-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo h1{
+    margin: 0;
+    margin-top: -20px;
+}
+
+.sub-titulo{
+    text-align: center;
+    left: 50%; /* move o elemento ate 50% do tamanho do header(pai) */
+    position: absolute;/* ignora os outros elementos e pode ser manipulado de qualquer forma por meio de "coordenadas"
+                        como o left*/
+    transform: translateX(-50%); /* complemente o left, levando o elemento mais 50% do tamanho do container pai(header) */
+}
+
+.container-principal{
+    display: flex; /* utilizando flexbox */
+    justify-content: center; /* centralizar na horizontal */
+    align-items: center;
+    height: 500px;
+}
+
+.formulario{
+    display: flex;
+    background-color: #3e430b;
+    padding: 30px;
+    width: 330px;
+    height: 400px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+form h3{
+    display: flex;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input[type="text"]{
+    display: flex;
+    width: 280px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.btn-calcular button{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: #464be4 ;
+    transition: 0.5s ease;
+    color: white;
+
+}
